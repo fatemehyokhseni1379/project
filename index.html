@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -11,12 +12,12 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #333; 
+  background-color: #91006c; 
 }
 
 .navbar a {
-  float: left;
-  font-size: 16px;
+  float: right;
+  font-size: 20px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -24,12 +25,12 @@ body {
 }
 
 .subnav {
-  float: left;
+  float: right;
   overflow: hidden;
 }
 
 .subnav .subnavbtn {
-  font-size: 16px;  
+  font-size: 20px;  
   border: none;
   outline: none;
   color: white;
@@ -40,27 +41,27 @@ body {
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: red;
+  background-color: rgb(168, 21, 112);
 }
 
 .subnav-content {
   display: none;
   position: absolute;
   left: 0;
-  background-color: red;
+  background-color: rgb(168, 21, 112);
   width: 100%;
   z-index: 1;
 }
 
 .subnav-content a {
-  float: left;
+  float: right;
   color: white;
   text-decoration: none;
 }
 
 .subnav-content a:hover {
   background-color: #eee;
-  color: black;
+  color: rgb(168, 21, 112);
 }
 
 .subnav:hover .subnav-content {
@@ -68,43 +69,59 @@ body {
 }
 </style>
 </head>
-<body>
-
+<body dir="rtl">
 <div class="navbar">
-  <a href="#home">Home</a>
+  <a href="#home">داشبورد</a>
   <div class="subnav">
-    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">ارتباط ما <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#company">Company</a>
-      <a href="#team">Team</a>
-      <a href="#careers">Careers</a>
+      <a href="#company">فضای مجازی</a>
+      <a href="#team">پشتیبانی</a>
+    <!-- <a href="#careers">Careers</a> -->
     </div>
   </div> 
   <div class="subnav">
-    <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">محل کار <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#bring">Bring</a>
-      <a href="#deliver">Deliver</a>
-      <a href="#package">Package</a>
-      <a href="#express">Express</a>
+      <a href="#bring">ثبت محل کار  جدید</a>
+      <a href="#deliver">لیست محل کار</a>
+      <!-- <a href="#package">Package</a>
+      <a href="#express">Express</a> -->
     </div>
   </div> 
   <div class="subnav">
-    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">شیفت <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#link1">Link 1</a>
-      <a href="#link2">Link 2</a>
-      <a href="#link3">Link 3</a>
-      <a href="#link4">Link 4</a>
+      <a href="#link1">ثبت فیش جدید</a>
+      <a href="#link2">لیست شیفت ها</a>
+      <!-- <a href="#link3">Link 3</a>
+      <a href="#link4">Link 4</a> -->
     </div>
   </div>
-  <a href="#contact">Contact</a>
-</div>
 
-<div style="padding:0 16px">
-  <h3>Subnav/dropdown menu inside a Navigation Bar</h3>
-  <p>Hover over the "about", "services" or "partners" link to see the sub navigation menu.</p>
-</div>
-
-</body>
+  <div class="subnav">
+  <button class="subnavbtn">پرسنل<i class="fa fa-caret-down"></i></button>
+  <div class="subnav-content">
+    <a href="#personel1">ثبت پرسنل جدید</a>
+    <a href="#personel2">لیست پرسنل</a>
+</div></div>
+<div class="slide1">
+<!-- <div data-v-6776736c="" data-show="true" class="ant-alert ant-alert-info ant-alert-with-description ant-alert-no-icon" style="background-color: rgb(70, 30, 93) !important; border: none; cursor: pointer; padding: 30px;"><span class="ant-alert-message"></span><span class="ant-alert-description"><div data-v-6776736c="" style="color: white;"><div data-v-6776736c="" class="row"><div data-v-6776736c="" class="col-lg-3 col-xs-6"><div data-v-6776736c="" class="ant-progress ant-progress-circle ant-progress-status-active ant-progress-show-info ant-progress-default"><div class="ant-progress-inner" style="width: 80px; height: 80px;"><svg viewBox="0 0 100 100" class="ant-progress-circle"><path d="M 50,50 m 0,47
+    a 47,47 0 1 1 0,-94
+    a 47,47 0 1 1 0,94" stroke="#f3f3f3" stroke-linecap="square" stroke-width="6" fill-opacity="0" class="ant-progress-circle-trail" style="stroke: rgb(243, 243, 243); stroke-dasharray: 220.31px, 295.31px; stroke-dashoffset: -37.5px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s ease 0s, stroke-width 0.06s ease 0.3s, opacity 0.3s ease 0s;"></path><path d="M 50,50 m 0,47
+    a 47,47 0 1 1 0,-94
+    a 47,47 0 1 1 0,94" stroke="" stroke-linecap="square" stroke-width="6" opacity="1" fill-opacity="0" class="ant-progress-circle-path" style="stroke: rgb(32, 201, 151); stroke-dasharray: 37.4527px, 295.31px; stroke-dashoffset: -37.5px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s ease 0s, stroke-width 0.06s ease 0.3s, opacity 0.3s ease 0s;"></path></svg><span class="ant-progress-text"><span data-v-6776736c="" style="color: white;">
+                     17% </span></span></div></div></div> <div data-v-6776736c="" class="col-lg-7 col-xs-6" style="padding-top: 26px; font-size: 16px;">
+               🎁
+               با تکمیل اطلاعات خود
+               <span data-v-6776736c="" style="color: rgb(255, 186, 33); font-weight: 500;">5 روز اشتراک رایگان</span>
+               از فینتو دریافت کنید.
+             </div> <div data-v-6776736c="" class="col-lg-2 col-xs-12" style="padding-top: 20px;"><button data-v-6776736c="" type="button" class="ant-btn" style="color: rgb(70, 30, 93); font-size: 16px;"><span>تکمیل اطلاعات</span></button></div></div></div></span></div>
+            </div>
+            </div>
+            <div data-v-6776736c="" class="row"><div data-v-6776736c="" class="col-lg-12"><div data-v-6776736c="" class="mt-2 mb-3 p-4" style="background: rgb(255, 255, 255); height: auto; box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 4px 0px; border-radius: 0.25rem;"><div data-v-6776736c="" class="mb-3">
+                جهت استفاده از سامانه حضور و غیاب فینتو، مراحل زیر را تکمیل کنید.
+              </div> <div data-v-6776736c="" class="ant-steps ant-steps-horizontal ant-steps-label-horizontal"><div data-v-6776736c="" class="ant-steps-item ant-steps-item-finish ant-steps-item-custom ant-steps-item-active" style="cursor: pointer;"><div class="ant-steps-item-container"><div class="ant-steps-item-tail"></div><div class="ant-steps-item-icon"><span class="ant-steps-icon"><i data-v-6776736c="" aria-label="icon: loading" class="anticon anticon-loading"><svg viewBox="0 0 1024 1024" data-icon="loading" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class="anticon-spin"><path d="M988 548c-19.9 0-36-16.1-36-36 0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 0 0-94.3-139.9 437.71 437.71 0 0 0-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.3C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3.1 19.9-16 36-35.9 36z"></path></svg></i></span></div><div class="ant-steps-item-content"><div class="ant-steps-item-title">ثبت محل کار</div></div></div></div><div data-v-6776736c="" class="ant-steps-item ant-steps-item-finish ant-steps-item-custom" style="cursor: pointer;"><div class="ant-steps-item-container"><div class="ant-steps-item-tail"></div><div class="ant-steps-item-icon"><span class="ant-steps-icon"><i data-v-6776736c="" aria-label="icon: loading" class="anticon anticon-loading"><svg viewBox="0 0 1024 1024" data-icon="loading" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class="anticon-spin"><path d="M988 548c-19.9 0-36-16.1-36-36 0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 0 0-94.3-139.9 437.71 437.71 0 0 0-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.3C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3.1 19.9-16 36-35.9 36z"></path></svg></i></span></div><div class="ant-steps-item-content"><div class="ant-steps-item-title">تعریف شیفت</div></div></div></div><div data-v-6776736c="" class="ant-steps-item ant-steps-item-finish ant-steps-item-custom" style="cursor: pointer;"><div class="ant-steps-item-container"><div class="ant-steps-item-tail"></div><div class="ant-steps-item-icon"><span class="ant-steps-icon"><i data-v-6776736c="" aria-label="icon: loading" class="anticon anticon-loading"><svg viewBox="0 0 1024 1024" data-icon="loading" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class="anticon-spin"><path d="M988 548c-19.9 0-36-16.1-36-36 0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 0 0-94.3-139.9 437.71 437.71 0 0 0-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.3C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3.1 19.9-16 36-35.9 36z"></path></svg></i></span></div><div class="ant-steps-item-content"><div class="ant-steps-item-title">ثبت پرسنل</div></div></div></div><div data-v-6776736c="" class="ant-steps-item ant-steps-item-wait ant-steps-item-custom" style="cursor: pointer;"><div class="ant-steps-item-container"><div class="ant-steps-item-tail"></div><div class="ant-steps-item-icon"><span class="ant-steps-icon"><i data-v-6776736c="" aria-label="icon: mobile" class="anticon anticon-mobile"><svg viewBox="64 64 896 896" data-icon="mobile" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class=""><path d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"></path></svg></i></span></div><div class="ant-steps-item-content"><div class="ant-steps-item-title">نصب نرم افزار موبایل</div></div></div></div></div></div></div></div> -->
+           <img src="image/pic2.png" alt="center" style="margin: 0 auto;">
+            </body>
 </html>
